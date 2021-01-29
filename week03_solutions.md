@@ -7,7 +7,7 @@ In the code examples, you will have seen the following types of error:
 my_list = [1, 2, 3, 4]
 print(my_list[4])
 ```
-- * **`NameError`**: the variable referred to does not exist -- there is no box in memory with this label. This often comes up when you mistype a variable name.
+- **`NameError`**: the variable referred to does not exist -- there is no box in memory with this label. This often comes up when you mistype a variable name.
 - **`SyntaxError`**: the code is not syntactically correct --- it is not valid Python, so Python doesn't know how to interpret it.
 - **`TypeError`**: a *very* common error to see when learning Python! This means that an operation or a function is applied to an object of the wrong *type*. A few examples:
 ```python
@@ -76,3 +76,10 @@ print(f'Result: {divisors}\n')
 # divisors = find_divisors([1, 2, 3, 4, 5, 6, 7, 8], 12)
 # print(f'Result: {divisors}\n')
 ```
+
+The main issues were:
+- A few name errors and syntax errors
+- To loop over the elements of `nums`, use `for i in nums:`. See the Week 2 tutorial section on loops.
+- Check that the **remainder** of n/i is zero, not the quotient: `if n % i == 0:`
+- Append `i` to the list (the current divisor), not `n`
+- Return the result, don't just display it on the screen
